@@ -2,6 +2,8 @@
 
 ## Done macro
 marks a line with done and tiestamp
+Tools->Developer->New plugin
+Save as : mkdone.py
 ```
 import sublime
 import datetime
@@ -20,7 +22,7 @@ in preferences->key binsings
 user
 ```
 [
-	{ "keys": ["f5"], "command": "example"}
+	{ "keys": ["f5"], "command": "mkdone"}
 ]
 ```
 
