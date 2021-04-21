@@ -9,7 +9,7 @@ import sublime
 import datetime
 import sublime_plugin
 
-class ExampleCommand(sublime_plugin.TextCommand):
+class MarkDone(sublime_plugin.TextCommand):
     def run(self, edit):
         timestamp = " [%s]\t" % (datetime.datetime.now().strftime("%H:%M"))
         self.view.insert(edit, self.view.line(self.view.sel()[0]).begin(),  '~V~ ' )
@@ -29,5 +29,6 @@ user
 ### Debug  
 run in the console
 ```
-sublime.log_input(True) sublime.log_commands(True)
+sublime.log_input(True) 
+sublime.log_commands(True)
 ```
